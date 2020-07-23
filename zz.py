@@ -20,7 +20,7 @@ print()
 
 str = "summer"
 list_enumerate = list(enumerate(str))
-print("list(enumerate(str)= ", list_enumerate)
+print("list_enumerate = ", list_enumerate)
 print("len(str) =", len(list_enumerate))
 print()
 
