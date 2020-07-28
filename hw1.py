@@ -9,5 +9,5 @@ print (quote + "\nCredits to : Andre Gide")
 print()
 
 #2
-name = input("Mihaela Gratar")
+print("Mihaela Gratar")
 #pressing Enter key will finish the program
