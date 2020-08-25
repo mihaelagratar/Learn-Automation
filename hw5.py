@@ -1,8 +1,12 @@
 #2
-print("Guess a number between 1 and 9")
-a = int(input("Enter a guess:"))
-while (a > 9) or (a < 1):
-    a = int(input("Enter a guess:"))
-else:
-    print("Well guessed!")
+#import random
+from random import randint
+a = randint(1, 9)
+while True:
+    b = int(input("Enter a guess: "))
+    if a == b:
+        print("Well guessed!")
+        break
+    else:
+        print("Try again!\n")
 

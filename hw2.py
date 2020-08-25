@@ -1,9 +1,29 @@
 #1.
-a = int(input("What's the starting number?"))
-b = int(input("What's the ending number?"))
-c = int(input("What is the count?"))
-for i in range(a, b, c):
-    print(i)
+while True:
+    a = input("What's the starting number?")
+    while not a.isdigit():
+        a = input("You should enter a number:")
+    else:
+        a = int(a)
+    b = input("What's the ending number?")
+    while not b.isdigit():
+        b = input("You should enter a number:")
+    else:
+        b = int(b)
+    if b < a:
+       print("The ending number should be greater than the starting one.")
+       break
+    c = input("What is the count?")
+    while not c.isdigit():
+        c = input("You should enter a number:")
+    else:
+        c = int(c)
+    if c == 0:
+        print("The counting number should be greater than 0.")
+        break
+    for i in range(int(a), int(b), int(c)):
+        print(i)
+    break
 print()
 
 #2.

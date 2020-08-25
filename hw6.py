@@ -4,13 +4,13 @@ message2 = "Have a good day!"
 message3 = "Have a wonderful day!"
 b = 10
 c = int(input("Whats's the number?"))
-if c < b:
+while c < b:
     print(message1)
-elif c == b:
-    print(message3)
+    b += 1
+    break
 else:
-    print(message2)
-
+    print(message3)
+print()
 
 #1.
 for i in range(1500, 2701):

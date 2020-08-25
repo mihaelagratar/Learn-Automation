@@ -1,14 +1,11 @@
 #3.
 tries = 1
 import random
-game = ["student", "homework", "vacation", "notebook", "pencil"]
-print("You have to guess the following word related to school.")
+game = ["pencil", "vacation", "alex", "ana", "homework"]
+print("You have to guess the following word")
 a = random.choice(game)
-correct = a
-length = len(a)
-length = str(length)
-b = input("The word is " + length + " letters long. Guess a letter: ")
-for i in range(1, len(a)):
+b = input("The word is " + str(len(a)) + " letters long.\nGuess a letter: ")
+for i in range(0, 4):
     if b not in a:
         print("Try again.")
         tries = tries + 1
@@ -20,7 +17,7 @@ for i in range(1, len(a)):
     if tries == 5:
 
         final = input("The word is:")
-        if final == correct:
+        if final == a:
             print("Yes, the word was", a)
             break
         else:
